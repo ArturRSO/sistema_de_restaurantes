@@ -20,7 +20,7 @@ import javassist.NotFoundException;
 @RestController
 public class RestaurantesController {
     
-    	@Autowired
+    @Autowired
 	private RestaurantesRepository restaurantesRepository;
 
 	@GetMapping("/restaurantes")
@@ -44,7 +44,7 @@ public class RestaurantesController {
 	}
 
 	@PostMapping("/restaurantes")
-	public ResponseEntity<Object> createStudent(@RequestBody RestaurantesModel restaurante) {
+	public ResponseEntity<Object> createRestaurante(@RequestBody RestaurantesModel restaurante) {
 		RestaurantesModel savedRestaurante = restaurantesRepository.save(restaurante);
 
 		URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
@@ -55,7 +55,7 @@ public class RestaurantesController {
 	}
 	
 	@PutMapping("/restaurantes/{id}")
-	public ResponseEntity<Object> updateStudent(@RequestBody RestaurantesModel restaurante, @PathVariable long id) {
+	public ResponseEntity<Object> updateRestaurante(@RequestBody RestaurantesModel restaurante, @PathVariable long id) {
 
 		Optional<RestaurantesModel> restaurantesOptional = restaurantesRepository.findById(id);
 

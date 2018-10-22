@@ -1,1 +1,7 @@
+ArturRSO\Sistema_de_Restaurantes\Pratos\PratosRepository.class
+ArturRSO\Sistema_de_Restaurantes\Restaurantes\RestaurantesRepository.class
 ArturRSO\Sistema_de_Restaurantes\SistemaDeRestaurantesApplication.class
+ArturRSO\Sistema_de_Restaurantes\Restaurantes\RestaurantesModel.class
+ArturRSO\Sistema_de_Restaurantes\Restaurantes\RestaurantesController.class
+ArturRSO\Sistema_de_Restaurantes\Pratos\PratosController.class
+ArturRSO\Sistema_de_Restaurantes\Pratos\PratosModel.class

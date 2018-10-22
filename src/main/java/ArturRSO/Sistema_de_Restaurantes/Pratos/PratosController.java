@@ -18,7 +18,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 @RestController
 public class PratosController {
     
-    	@Autowired
+    @Autowired
 	private PratosRepository pratosRepository;
 
 	@GetMapping("/pratos")
@@ -55,9 +55,9 @@ public class PratosController {
 	@PutMapping("/pratos/{id}")
 	public ResponseEntity<Object> updatePrato(@RequestBody PratosModel prato, @PathVariable long id) {
 
-		Optional<PratosModel> studentOptional = pratosRepository.findById(id);
+		Optional<PratosModel> pratosOptional = pratosRepository.findById(id);
 
-		if (!studentOptional.isPresent())
+		if (!pratosOptional.isPresent())
 			return ResponseEntity.notFound().build();
 
 		prato.setId(id);

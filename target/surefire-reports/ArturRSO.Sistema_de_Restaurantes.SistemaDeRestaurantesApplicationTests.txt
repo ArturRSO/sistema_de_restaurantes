@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: ArturRSO.Sistema_de_Restaurantes.SistemaDeRestaurantesApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.79 s - in ArturRSO.Sistema_de_Restaurantes.SistemaDeRestaurantesApplicationTests
